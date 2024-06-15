@@ -44,7 +44,7 @@ class EmbeddingServiceConfig:
 
     @cached_property
     def dtypes(self) -> list[str]:
-        dtypes = self._get_no_required_multi("DTYPES", "auto")
+        dtypes = self._get_no_required_multi("DTYPES", "float16")
         return dtypes
     
     @cached_property
